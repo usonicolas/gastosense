@@ -19,8 +19,8 @@ Muchas personas tienen dificultades para llevar un control claro de sus ingresos
 
 | Nombre | Rol | Usuario de GitHub |
 |--------|-----|-------------------|
-| Nombre del integrante 1 | Brayan Nicolas Ayala | usonicolas |
-| Nombre del integrante 2 | Daniel Felipe Cruz | danielcruz54  |
+| Nombre del integrante 1 | Brayan Nicolas Ayala | usonicolas | líder técnico y backend | Estructura del repo, módulos de movimientos y presupuestos, pruebas, revisión de cambios |
+| Nombre del integrante 2 | Daniel Felipe Cruz | danielcruz54  | Documentación y reportes | Módulo de reportes, README y docs/, diagramas UML, apoyo en pruebas |
 
 
 > Reemplazar esta tabla con los datos reales del equipo antes de la entrega.
