@@ -63,7 +63,7 @@ Requisitos: [Node.js](https://nodejs.org/) 18 o superior. No hay dependencias ex
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/USUARIO/gastosense.git
+git clone https://github.com/usonicolas/gastosense.git
 cd gastosense
 
 # Ejecutar la demostración
