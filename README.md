@@ -19,9 +19,9 @@ Muchas personas tienen dificultades para llevar un control claro de sus ingresos
 
 | Nombre | Rol | Usuario de GitHub |
 |--------|-----|-------------------|
-| _Nombre del integrante 1_ | _Por definir_ | _@usuario_ |
-| _Nombre del integrante 2_ | _Por definir_ | _@usuario_ |
-| _Nombre del integrante 3_ | _Por definir_ | _@usuario_ |
+| Nombre del integrante 1 | Brayan Nicolas Ayala | usonicolas |
+| Nombre del integrante 2 | Daniel Felipe Cruz | No tiene  |
+
 
 > Reemplazar esta tabla con los datos reales del equipo antes de la entrega.
 
