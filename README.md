@@ -40,17 +40,27 @@ Muchas personas tienen dificultades para llevar un control claro de sus ingresos
 
 ```
 gastosense/
-├── docs/
-│   └── descripcion_proyecto.md   Descripción técnica de la solución
 ├── src/
-│   ├── main.js                   Punto de entrada (demostración por consola)
-│   └── modulos/
-│       ├── movimientos.js        Registro de ingresos y gastos
-│       ├── presupuestos.js       Presupuestos mensuales y alertas de límite
-│       └── reportes.js           Balance y resumen por categoría
+│   ├── main.js                        Punto de entrada: conecta las piezas
+│   ├── componentes/
+│   │   └── consola.js                 Salida en pantalla (luego será la interfaz React)
+│   ├── modelos/
+│   │   └── movimiento.js              Qué es un ingreso o un gasto y su validación
+│   ├── servicios/
+│   │   ├── gestorMovimientos.js       Guarda y consulta movimientos
+│   │   ├── gestorPresupuestos.js      Presupuestos mensuales y alertas de límite
+│   │   └── reportes.js                Saldo y resumen por categoría
+│   └── utilidades/
+│       ├── validaciones.js            Validaciones reutilizables
+│       └── formato.js                 Formato de pesos
 ├── tests/
-│   ├── README.md                 Plan de pruebas
-│   └── gastosense.test.js        Pruebas básicas
+│   ├── README.md                      Plan de pruebas
+│   └── gastosense.test.js             Pruebas automáticas
+├── documentacion/
+│   ├── descripcion_proyecto.md        Descripción técnica de la solución
+│   ├── patrones/                      Documentación de cada patrón implementado
+│   └── diagramas/                     Diagramas técnicos (UML)
+├── recursos/                          Imágenes y material de apoyo
 ├── package.json
 ├── README.md
 ├── LICENSE
