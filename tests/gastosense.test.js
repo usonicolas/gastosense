@@ -3,9 +3,9 @@
 const test = require('node:test');
 const assert = require('node:assert');
 
-const { GestorMovimientos } = require('../src/modulos/movimientos');
-const { GestorPresupuestos } = require('../src/modulos/presupuestos');
-const { calcularSaldo, resumenGastosPorCategoria } = require('../src/modulos/reportes');
+const { GestorMovimientos } = require('../src/servicios/gestorMovimientos');
+const { GestorPresupuestos } = require('../src/servicios/gestorPresupuestos');
+const { calcularSaldo, resumenGastosPorCategoria } = require('../src/servicios/reportes');
 
 test('registra un ingreso y un gasto válidos', () => {
   const g = new GestorMovimientos();

@@ -5,11 +5,13 @@
  * indica si los gastos se acercan o superan ese límite.
  */
 
+const { esMontoValido, esMesValido } = require('../utilidades/validaciones');
+
 // Se avisa cuando el gasto llega a este porcentaje del límite.
 const UMBRAL_ALERTA = 0.8;
 
 class GestorPresupuestos {
-  /** @param {import('./movimientos').GestorMovimientos} gestorMovimientos */
+  /** @param {import('./gestorMovimientos').GestorMovimientos} gestorMovimientos */
   constructor(gestorMovimientos) {
     this._movimientos = gestorMovimientos;
     this._limites = new Map(); // clave: "AAAA-MM|categoria"
@@ -22,10 +24,10 @@ class GestorPresupuestos {
    * @param {string} mes     formato AAAA-MM
    */
   definir(categoria, limite, mes) {
-    if (typeof limite !== 'number' || !Number.isFinite(limite) || limite <= 0) {
+    if (!esMontoValido(limite)) {
       throw new Error('El límite del presupuesto debe ser un número mayor que cero.');
     }
-    if (!/^\d{4}-\d{2}$/.test(mes)) {
+    if (!esMesValido(mes)) {
       throw new Error('El mes debe tener el formato AAAA-MM.');
     }
     this._limites.set(`${mes}|${categoria}`, limite);

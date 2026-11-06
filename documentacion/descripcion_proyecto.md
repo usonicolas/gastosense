@@ -33,9 +33,9 @@ Muchas personas tienen dificultades para llevar un control claro de sus ingresos
 
 | Módulo | Archivo | Responsabilidad | Estado |
 |--------|---------|-----------------|--------|
-| Movimientos | `src/modulos/movimientos.js` | Validar y guardar ingresos y gastos; consultar el historial | Implementado (base) |
-| Presupuestos | `src/modulos/presupuestos.js` | Definir un límite mensual por categoría y avisar al acercarse a él | Implementado (base) |
-| Reportes | `src/modulos/reportes.js` | Calcular el balance y el resumen por categoría | Implementado (base) |
+| Movimientos | `src/servicios/gestorMovimientos.js` | Validar y guardar ingresos y gastos; consultar el historial | Implementado (base) |
+| Presupuestos | `src/servicios/gestorPresupuestos.js` | Definir un límite mensual por categoría y avisar al acercarse a él | Implementado (base) |
+| Reportes | `src/servicios/reportes.js` | Calcular el balance y el resumen por categoría | Implementado (base) |
 | Metas de ahorro | pendiente | Definir metas y calcular el avance | Por desarrollar |
 | Interfaz | pendiente | Pantallas web y móvil | Por desarrollar |
 | Persistencia | pendiente | Guardado en base de datos | Por desarrollar |
